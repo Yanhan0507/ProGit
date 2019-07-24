@@ -1,0 +1,19 @@
+
+staging area:
+    files that have been 'git add'.
+    git add will add the exact versions of the files to staging area. but if you modify things after but before commit, you will need to run git add again.
+
+git status will show both staged and unstange files.
+git diff will only show the exact difference between staged and unstaged files.
+git diff --staged will show the difference between staged files and last commit.
+(- followed by a character, -- usually followed by multiple chararacters)
+
+git commit -a <- skip git add (run git add automatically)
+
+git rm   will remove a file from the FS, and also from git.
+git rm --cached    will not remove a file from FS, but not track them anymore. (in case u dont want to modify ignore file)
+
+git log  <-  you can specify a range   
+-2 last 2 commits 
+-p show details (p : patch)
+
