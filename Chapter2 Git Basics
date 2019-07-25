@@ -17,3 +17,18 @@ git log  <-  you can specify a range
 -2 last 2 commits 
 -p show details (p : patch)
 
+
+Undoing things:
+    Head always points to the most recent commit of the current branch.
+    
+    undo last commit:
+    git revert {hashcode}  or git revert head~1  (revert second most recent commit)  revert a commit.
+    
+    undo staged changes:
+    git reset Head   or Git reset Head {file}  : undo all staged file(s).   (reset to the version of Head). 
+    
+    undo unstage changes:
+    git checkout {file}     : discard the file in the disk and you cant retrieve it back.
+    
+    modify last commit:
+    git commit --amend      : change last commit. use the current staged version to override it.
