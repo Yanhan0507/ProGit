@@ -16,4 +16,4 @@ git rm --cached    will not remove a file from FS, but not track them anymore. (
 git log  <-  you can specify a range   
 -2 last 2 commits 
 -p show details (p : patch)
-
+ii
