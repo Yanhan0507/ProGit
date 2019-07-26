@@ -32,3 +32,16 @@ Undoing things:
     
     modify last commit:
     git commit --amend      : change last commit. use the current staged version to override it.
+
+Working with remotes:
+    git remote -v
+    can show all remote urls.
+    if the repo is set up by git clone, then origin will be the remote branch you cloned from.
+    git push origin master (pushed master to origin)  (git push remotename branchname)
+
+
+Tag: for important commit(e.g. release) you may want to add a tag:
+Two types of tag:
+    annotated tags: contains more info. like tagger's email, can it can be signed.
+    Lightweight tags: like a pointer to a specific branch.
+
