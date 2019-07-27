@@ -1,0 +1,18 @@
+HEAD points to the current branch and current commit.
+
+                    666 <= master
+                    |
+98ca8 <= 421ab <= 333 <= 789
+                          |
+                          test branch
+git checkout -b test at 333, and then make a new change 789.
+and then someone made a change 666 at master. so two branch divert.
+
+you have to switch to master (before switch, you can consider to commit your current change),
+becoz switch would restore anything to the target branch. 
+
+from master, you can run a git merge test
+if there is any merge conflict, deal with them, and add these files, and then commit. then this commit is a common child of both 666
+and 789 and at the end of master branch.
+then you can delelte test branch.
+
