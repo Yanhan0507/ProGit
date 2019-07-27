@@ -1,6 +1,6 @@
 HEAD points to the current branch and current commit.
 
-                    686 <= master
+                   686 <= masterr
                     |
 98ca8 <= 421ab <= 333 <= 789
                           |
