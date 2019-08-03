@@ -16,3 +16,36 @@ if there is any merge conflict, deal with them, and add these files, and then co
 and 789 and at the end of master branch.
 then you can delelte test branch.
 
+
+Remote branches in git is more like a reference/bookmark.  origin/master. origin/branch. origin is the original place that you
+cloned your repo.
+git fetch original   will make your original/master updated but not your local master(master)
+
+
+git checkout -b A original/A
+create a local branch based on a remote branch.
+A and original/A are tracking branch that you may run 'git pull' which will automatiaclly pull original/A to A.
+
+
+
+rebasing:
+merge is like to create a new commite as the commen ancestor of two branch.
+rebasing is to put your branch/commites on top of another branch.
+
+git checkout A
+git rebase master
+
+      master     A
+123<-783   <-   999
+git checkout master
+git merge A
+             master,A
+123<-783   <-    999
+
+you can even use rebase on something without common ancestor.
+git rebase --onto master A1 A2
+(p72)
+
+
+drawbacks:
+dont rebase any public commit.
