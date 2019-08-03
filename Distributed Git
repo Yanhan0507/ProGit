@@ -1,0 +1,2 @@
+Git fetch will sync all remote branch to your local bookmark branch (origin/master, origin/A ...)
+then you can merge from there.
