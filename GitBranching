@@ -19,10 +19,10 @@ then you can delelte test branch.
 
 Remote branches in git is more like a reference/bookmark.  origin/master. origin/branch. origin is the original place that you
 cloned your repo.
-git fetch original   will make your original/master updated but not your local master(master)
+git fetch original   will make your origin/master updated but not your local master(master)
 
 
-git checkout -b A original/A
+git checkout -b A origin/A
 create a local branch based on a remote branch.
 A and original/A are tracking branch that you may run 'git pull' which will automatiaclly pull original/A to A.
 
