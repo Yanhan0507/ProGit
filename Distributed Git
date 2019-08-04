@@ -1,2 +1,22 @@
 Git fetch will sync all remote branch to your local bookmark branch (origin/master, origin/A ...)
 then you can merge from there.
+
+git rebase -i head~3
+change pick to squash, then it will be combined to previous commit(pick)
+
+git diff master
+it will make a diff between the latest master and your last commit of current branch
+
+to see a diff between the common ancestor where you original fork from master and the last commit of your branch.
+git merge-base contrib master
+821y90abc2
+git diff 821
+
+this is equivalent to: git diff master...topic
+
+cherry-pick in git is like a rebase for a single commit. it takes the patch that was introduced in a commit and tried to
+reapply it on the branch you are currently on. this is useful if you have a number of commits on a topic branch and only
+want to integrate one of them.
+
+
+git cherry pick 975578
