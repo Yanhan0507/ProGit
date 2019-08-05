@@ -36,3 +36,16 @@ you can split one previous commit or change msgs of multiple previous commits by
 
 git commit --amend   allows you to change the most recent one and change its commit msg.
 
+git blame -L 12,33 a.cpp
+blame between 12-33 lines
+^ab907 ...
+213cd ...
+^ ->means this line is added by first commit of the file. (when it was added.)
+
+git blame -C a.cpp
+see which each line original from
+
+
+git bisect    which can binary search based on commits.
+
+
