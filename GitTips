@@ -1,0 +1,38 @@
+git show ab352a  (A first few characters is enough to identify a commit.
+equivalent to 
+git show master (if you want to see the most recent commit)
+
+
+git show head~2  (show the grandparent commit)
+git show head^2  (show the second parent, only valid when you the commit is a merge one)
+
+
+git log A..B        shows commit is in B but not in A.
+
+git log origin/master
+equivalents to
+git log origin/master..HEAD
+that is to show which will be pushed.
+
+
+stashing:
+git stash   ->  push your current changes which arent committed to stack.
+git stash list -> show all changes are pushed to stack.
+git stash apply  or   git stash apply stash@{2}
+apply the changes to your current branch. it can be applied to any branch at any status.
+after it's done, you can do 
+git stash pop      to remove the changes applied from stash aread.
+git stash branch AAA      that is to create a new branch that base on the commit you were
+on when you stashed the changes. in case, no current branches are clean.
+
+rewriting history:
+git rebase -i head~3
+
+you can remove one commit (delete the commit)
+you can reorder commits (just reorder them)
+you can squash commits (change pick to squash and then it will be modified to the change directly before)
+you can split one previous commit or change msgs of multiple previous commits by changing pick to commit
+
+
+git commit --amend   allows you to change the most recent one and change its commit msg.
+
