@@ -1,4 +1,3 @@
-
 staging area:
     files that have been 'git add'.
     git add will add the exact versions of the files to staging area. but if you modify things after but before commit, you will need to run git add again.
