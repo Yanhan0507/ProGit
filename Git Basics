@@ -24,6 +24,7 @@ Undoing things:
     undo last commit:
     git revert {hashcode}  or git revert head~1  (revert second most recent commit)  revert a commit.
     
+
     undo staged changes:
     git reset Head   or Git reset Head {file}  : undo all staged file(s).   (reset to the version of Head). 
     
