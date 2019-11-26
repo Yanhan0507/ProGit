@@ -7,6 +7,7 @@ git diff will only show the exact difference between staged and unstaged files.
 git diff --staged will show the difference between staged files and last commit.
 (- followed by a character, -- usually followed by multiple chararacters)
 
+
 git commit -a <- skip git add (run git add automatically)
 
 git rm   will remove a file from the FS, and also from git.
@@ -23,6 +24,7 @@ Undoing things:
     undo last commit:
     git revert {hashcode}  or git revert head~1  (revert second most recent commit)  revert a commit.
     
+
     undo staged changes:
     git reset Head   or Git reset Head {file}  : undo all staged file(s).   (reset to the version of Head). 
     
