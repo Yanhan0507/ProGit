@@ -7,6 +7,7 @@ git diff will only show the exact difference between staged and unstaged files.
 git diff --staged will show the difference between staged files and last commit.
 (- followed by a character, -- usually followed by multiple chararacters)
 
+
 git commit -a <- skip git add (run git add automatically)
 
 git rm   will remove a file from the FS, and also from git.
