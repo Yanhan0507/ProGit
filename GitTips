@@ -2,7 +2,6 @@ git show ab352a  (A first few characters is enough to identify a commit.
 equivalent to 
 git show master (if you want to see the most recent commit)
 
-
 git show head~2  (show the grandparent commit)
 git show head^2  (show the second parent, only valid when you the commit is a merge one)
 
